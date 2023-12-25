@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> E-Commerce Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .jumbotron {
+            background: linear-gradient(to right, #007bff, #6c757d);
+            color: #fff;
+        }
+
+        .category {
+            margin: 20px 0;
+            
+        }
+       
+
+        .product {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            background-color: #fff;
+            border-radius: 10px;
+            
+        }
+
+       
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Girl's Store</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Categories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Featured Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Subscriptions</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Banner Section -->
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to Girl's Store</h1>
+    <p class="lead">Explore our wide range of products and enjoy great Discounts.</p>
+</div>
+
+<!-- Product Categories -->
+<div class="container">
+    <h2 class="text-center category">Categories</h2>
+    <div class="row">
+        <!-- Category 1 -->
+        <div class="col-md-4">
+            <img src="image/display-bag.jpg" alt="Category 1" class="img-fluid rounded-circle">
+            <h4 class="text-center mt-3">Bag</h4>
+        </div>
+        <!-- Category 2 -->
+        <div class="col-md-4">
+            <img src="image/skin care prodect.jpg" alt="Category 2" class="img-fluid rounded-circle">
+            <h4 class="text-center mt-3">Skin Care Product</h4>
+        </div>
+        <!-- Category 3 -->
+        <div class="col-md-4">
+            <img src="image/make-up.jpg" alt="Category 3" class="img-fluid rounded-circle">
+            <h4 class="text-center mt-3">Make Up</h4>
+        </div>
+
+         <div>
+        
+    </div>
+</div>
+
+<!-- Product Listing -->
+<div class="container mt-5">
+    <h2 class="text-center category">Featured Products</h2>
+    <div class="row">
+        <!-- Product 1 -->
+        <div class="col-md-4">
+            <div class="product">
+                <img src="image/bag-1.jpg" alt="Product 1" class="img-fluid">
+                <h4 class="mt-3">Fashion 3 In 1</h4>
+                <p class="lead">Price: 1850 <span class="badge badge-danger"> Discount -20%</span></p> 
+                <button class="btn btn-primary" onclick="showOrderModal('Fashion 3 In 1', 1850, 'In Stock', 'image/bag-1.jpg')">Order Now</button>
+                
+            </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="col-md-4">
+            <div class="product">
+                <img src="image/bag-2.jpg" alt="Product 2" class="img-fluid">
+                <h4 class="mt-3">Fancy party Bag</h4>
+                <p class="lead">Price: 1200 <span class="badge badge-danger"> Discount -15%</span></p>
+                <button class="btn btn-primary" onclick="showOrderModal('Fancy party Bag', 1200, 'Out Of Stock', 'image/bag-2.jpg')">Order Now</button>
+                
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col-md-4">
+            <div class="product">
+                <img src="image/bag-3.jpg" alt="Product 3" class="img-fluid">
+                <h4 class="mt-3">Luxury Bag</h4>
+                <p class="lead">Price: 2850 <span class="badge badge-danger">Discount -25%</span></p>
+                <button class="btn btn-primary" onclick="showOrderModal('Luxury Bag', 2850, 'In Stock', 'image/bag-3.jpg')">Order Now</button>
+                
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-md-4">
+            <div class="product">
+                <img src="image/lipstick-1.jpg" alt="Product 3" class="img-fluid">
+                <h4 class="mt-3">Mac</h4>
+                <p class="lead">Price: 800 <span class="badge badge-danger"> Discount -25%</span></p>
+                <button class="btn btn-primary" onclick="showOrderModal('Mac', 800 , 'In Stock', 'image/lipstick-1.jpg')">Order Now</button>
+               
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-md-4">
+            <div class="product">
+                <img src="image/lipstick-2.jpg" alt="Product 3" class="img-fluid">
+                <h4 class="mt-3">Maybelline</h4>
+                <p class="lead">Price: 1350 <span class="badge badge-danger"> Discount -25%</span></p>
+                <button class="btn btn-primary" onclick="showOrderModal('Maybelline', 1350 , 'In Stock', 'image/lipstick-2.jpg')">Order Now</button>
+               
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-md-4">
+            <div class="product">
+                <img src="image/lipstick-3.jpg" alt="Product 3" class="img-fluid">
+                <h4 class="mt-3">Liquid</h4>
+                <p class="lead">Price: 850 <span class="badge badge-danger"> Discount -25%</span></p>
+                <button class="btn btn-primary" onclick="showOrderModal('Liquid', 850, 'In Stock', 'image/lipstick-3.jpg')">Order Now</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Order Modal -->
+<div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="orderModalLabel">Order Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img id="orderImage" class="img-fluid mb-3">
+                <h4 id="orderProductName"></h4>
+                <p id="orderProductPrice"></p>
+                <p id="orderProductAvailability"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="confirmOrder()">Confirm Order</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    function showOrderModal(name, price, availability, image) {
+        // Set product details in the modal
+        document.getElementById('orderProductName').innerText = name;
+        document.getElementById('orderProductPrice').innerText = 'Price: ' + price;
+        document.getElementById('orderProductAvailability').innerText = 'Availability: ' + availability;
+        document.getElementById('orderImage').src = image;
+
+        // Show the modal
+        $('#orderModal').modal('show');
+    }
+
+    function confirmOrder() {
+        // You can add logic here to handle the order confirmation, e.g., send a request to the server
+        alert('Order confirmed!');
+        // Close the modal after confirmation
+        $('#orderModal').modal('hide');
+    }
+</script>
+
+<!-- Footer -->
+<footer class="text-center py-4 mt-5" style="background-color:  #212830; color: #fff;">
+    <div class="container">
+        <p>&copy; 2023 Girl's Store. All rights reserved.</p>
+        <p>Address: 123 Dream Street, Cityville</p>
+        <p>Email: info@girlsstore.com | Phone: +1 (123) 456-7890</p>
+    </div>
+</footer>
+
+<!-- Bootstrap and jQuery Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+
+</body>
+</html>
